@@ -73,7 +73,7 @@ public class MainActivity2 extends AppCompatActivity {
                         Glide.with(MainActivity2.this).load(currurl).listener(new RequestListener<Drawable>() {
                             @Override
                             public boolean onLoadFailed(@Nullable @org.jetbrains.annotations.Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
-                                p.setVisibility(View.GONE);
+
                                 return false;
                             }
 
@@ -95,7 +95,9 @@ public class MainActivity2 extends AppCompatActivity {
                             public void run() {
                                 // TODO Auto-generated method stub
                                 p.setVisibility(View.INVISIBLE);
-                                Toast.makeText(MainActivity2.this, "Something went wrong", Toast.LENGTH_SHORT).show();
+                                Intent i=new Intent(MainActivity2.this,MainActivity.class);
+                                startActivity(i);
+                                Toast.makeText(MainActivity2.this, "Something went wrong Reconnecting your Wi-Fi", Toast.LENGTH_SHORT).show();
                             }
                         }, 5000);
 

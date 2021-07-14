@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:background="#C89C2D"
     tools:context=".MainActivity">
 
@@ -18,7 +17,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dfghgh" />
+        app:srcCompat="@drawable/dfghgh"
+        android:contentDescription="@string/image" />
 
     <Button
         android:id="@+id/button"
@@ -30,7 +30,7 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:text="Memes Bag"
+        android:text="@string/memes_bag"
         app:backgroundTint="#3EB849"
         app:layout_constraintBottom_toBottomOf="@+id/imageView12"
         app:layout_constraintEnd_toEndOf="parent"
